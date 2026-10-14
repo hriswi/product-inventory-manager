@@ -1,8 +1,5 @@
 # Product Inventory Manager (TypeScript)
 
-**Name:** Hriswi
-**Course:** Advanced Web Technologies (24MCA301) - Module 1: TypeScript
-St Joseph Engineering College, Mangaluru - III Sem MCA
 
 ## Project structure
 | File | Purpose |
@@ -44,4 +41,4 @@ errors/errors.ts(7,43): error TS2554: Expected 1-2 arguments, but got 3.
 `any` switches off type checking, while `number` makes the compiler reject wrong-typed values before the code runs.
 
 ## Live page
-https://<your-github-username>.github.io/<repo-name>/
+https://hriswi.github.io/product-inventory-manager
