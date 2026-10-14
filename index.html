@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Inventory Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Inventory Manager</h1>
+  </header>
+  <main>
+    <section class="stats" id="stats"></section>
+    <section class="card">
+      <h2>Add Product</h2>
+      <form id="addForm">
+        <input id="name" placeholder="Product name" required>
+        <input id="price" type="number" min="0" step="0.01" placeholder="Price" required>
+        <input id="tags" placeholder="Tags (comma separated)">
+        <label><input id="stock" type="checkbox" checked> In stock</label>
+        <button type="submit">Add</button>
+      </form>
+      <p id="error" class="error"></p>
+    </section>
+    <section class="card">
+      <div class="toolbar">
+        <input id="search" placeholder="Search by name or tag...">
+        <label><input id="onlyStock" type="checkbox"> Show only in-stock</label>
+        <input id="disc" type="number" min="0" max="100" value="10" title="Discount %">
+        <button id="applyDisc">Apply discount to all</button>
+      </div>
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>Price (Rs.)</th><th>Status</th><th>Tags</th><th>Actions</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </section>
+  </main>
+  <script type="module" src="dist/app.js"></script>
+</body>
+</html>

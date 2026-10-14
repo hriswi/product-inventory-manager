@@ -1,0 +1,2 @@
+errors/errors.ts(6,5): error TS2322: Type 'string' is not assignable to type 'number'.
+errors/errors.ts(7,43): error TS2554: Expected 1-2 arguments, but got 3.
